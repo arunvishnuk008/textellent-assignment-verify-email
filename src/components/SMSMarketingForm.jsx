@@ -299,16 +299,6 @@ export default function SMSMarketingForm() {
               <div className="h-1 w-20 mx-auto rounded-full mb-4" style={{
                 background: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #6366f1 100%)'
               }}></div>
-              
-              {apiResponse.result?.toLowerCase() === 'passed' ? (
-                <p className="text-lg text-gray-700 mt-4">
-                  Welcome <span className="font-bold text-indigo-600">{formData.firstName} {formData.lastName}</span> to Textellent platform!
-                </p>
-              ) : (
-                <p className="text-lg text-gray-700 mt-4">
-                  Sorry, <span className="font-bold text-red-600">{formData.firstName} {formData.lastName}</span>, we were unable to create an account for you due to the following reason:
-                </p>
-              )}
             </div>
 
             <div className="space-y-4">
